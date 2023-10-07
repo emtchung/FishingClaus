@@ -7,6 +7,7 @@ public class GetToy : MonoBehaviour
     public FishingRod fishingRod;
     public bool hooked = false;
     public GameObject toy;
+    public LogicScript ls;
 
     void Update()
     {
@@ -17,6 +18,7 @@ public class GetToy : MonoBehaviour
             {
                 Destroy(toy);
                 hooked = false;
+                ls.AddScore();
             }
         }
     }
