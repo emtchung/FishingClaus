@@ -5,13 +5,12 @@ using UnityEngine;
 public class FishingRod : MonoBehaviour
 {
     public float rodSpeed = 2.0f;
-    public float reelSpeed = 1.0f;
     private float x_pos = 0.8f;
     private float y_pos = 5.0f;
     public LineRenderer rod;
     public GameObject hook;
-    private bool isCasting = false;
-    public GameObject present = null;
+    // public bool isCasting = false;
+    public GameObject toy;
 
     // Start is called before the first frame update
     void Start()
@@ -69,22 +68,28 @@ public class FishingRod : MonoBehaviour
         hook.transform.position = rod.GetPosition(1);
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    public Vector3 GetHookPosition()
     {
-        if (other.CompareTag("Present") && isCasting)
-        {
-            // Hook the present when it touches the hook
-            present = other.gameObject;
-
-            // Move the hooked present with the hook
-            present.transform.position = hook.transform.position;
-
-            // Despawn the present when it reaches the top
-            if (hook.transform.position.y >= 5.0f)
-            {
-                Destroy(present);
-                present = null;
-            }
-        }
+        return hook.transform.position;
     }
+
+    // private void OnTriggerEnter2D(Collider2D other)
+    // {
+    //     if (other.CompareTag("Toy"))
+    //     {
+    //         // Hook the toy when it touches the hook
+    //         toy = other.gameObject;
+
+    //         // Move the hooked toy with the hook
+    //         toy.transform.position = hook.transform.position;
+
+    //         // Despawn the toy when it reaches the top
+    //         if (hook.transform.position.y >= 5.0f)
+    //         {
+    //             Destroy(toy);
+    //             toy = null;
+    //         }
+    //     }
+    // }
+
 }

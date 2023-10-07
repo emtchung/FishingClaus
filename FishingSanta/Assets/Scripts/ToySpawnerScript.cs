@@ -20,7 +20,6 @@ public class ToySpawnerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(_timer);
         _timer += Time.deltaTime;
         if (_timer >= spawnRate)
         {
