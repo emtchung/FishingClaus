@@ -12,7 +12,7 @@ public class GetToy : MonoBehaviour
     {
         if (hooked == true)
         {
-            toy.transform.position = fishingRod.GetHookPosition();
+            toy.transform.position= new Vector3(fishingRod.GetHookPosition().x, fishingRod.GetHookPosition().y - 2.0f, 0f);
             if (fishingRod.GetHookPosition().y >= 5.0f)
             {
                 Destroy(toy);
