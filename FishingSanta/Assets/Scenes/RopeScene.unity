@@ -739,6 +739,61 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1795462741
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1795462743}
+  - component: {fileID: 1795462742}
+  m_Layer: 0
+  m_Name: ToySpawner (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1795462742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795462741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf4822ca4b2d24f05806cb08af474cb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toy: {fileID: 5522535758052020558, guid: 5b0cf57a6e2284009a95f676335ef0e6, type: 3}
+  spawnRate: 2
+  lowestPoint: -6
+  highestPoint: 0
+  spriteList:
+  - {fileID: 21300000, guid: 096177768a158414193bcc6c5bbe2560, type: 3}
+  - {fileID: 21300000, guid: 58cb38dea9e894709af41accb8a5f8f5, type: 3}
+  - {fileID: 21300000, guid: eae8f257e703f4716ad0e6898ac9cfa9, type: 3}
+  - {fileID: 21300000, guid: d1f6655c4581f4f0593b804fbd21711d, type: 3}
+  - {fileID: 21300000, guid: 8c6ab2e52bc794621b6eb7e31cec52d8, type: 3}
+  - {fileID: 21300000, guid: b1ad574a9889246b7b88ba37401af3db, type: 3}
+--- !u!4 &1795462743
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795462741}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.6, y: -3.36, z: 0.023708764}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1922484525
 GameObject:
   m_ObjectHideFlags: 0
@@ -907,3 +962,4 @@ SceneRoots:
   - {fileID: 1332328924}
   - {fileID: 1922484527}
   - {fileID: 1561733793}
+  - {fileID: 1795462743}
